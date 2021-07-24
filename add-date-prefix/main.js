@@ -19,7 +19,7 @@ define([
             if (!has_date_prefix) {
                 var now = new Date();
                 var year = now.getFullYear();
-                var month = pad(now.getMonth(), 2);
+                var month = pad(now.getMonth()+1, 2);
                 var date = pad(now.getDate(), 2);
                 var new_name = `${year}-${month}-${date} ${name}`;
                 Jupyter.notebook.rename(new_name);
