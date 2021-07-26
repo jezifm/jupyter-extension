@@ -6,8 +6,8 @@ if [[ -z "$1" ]]; then
     echo 'usage: ./install.sh [extension]'
     echo ''
     echo 'Possible extensions:'
-    for var in $(ls extensions); do
-        echo "  - ${var}"
+    for extension in $(ls extensions); do
+        echo "  - ${extension}"
     done
     exit 1;
 fi
